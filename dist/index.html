@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9d48b1122f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bristol Street | Versa Mobility Solutions</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="heading">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo" />
+        </div>
+        <div class="navbar-primary">
+          <div class="nav-toolbar">
+            <ul class="nav-toolbar__list">
+              <li class="nav-toolbar__item">
+                Contrast
+                <span class="nav-toolbar__btn" onclick="contrastPageOff()">A</span>
+                <span
+                  class="nav-toolbar__btn nav-toolbar__btn--invert"
+                  onclick="contrastPageOn()"
+                  >A</span
+                >
+              </li>
+              <li class="nav-toolbar__item">
+                Font Size
+                <span class="nav-toolbar__btn" onclick="fontSize(0.75)"
+                  >A-</span
+                >
+                <span class="nav-toolbar__btn" onclick="fontSize(1)">A</span>
+                <span class="nav-toolbar__btn" onclick="fontSize(1.25)"
+                  >A+</span
+                >
+              </li>
+              <li class="nav-toolbar__item">Download a Brochure</li>
+              <li class="nav-toolbar__item">Blog</li>
+              <li class="nav-toolbar__item nav-toolbar__item--green">
+                <i class="fas fa-phone-alt"></i> Call us on 0330 042 5909
+                <i class="fas fa-info-circle"></i>
+              </li>
+            </ul>
+          </div>
+          <nav class="nav-main">
+            <ul class="nav-main__list">
+              <li class="nav-main__item">New Vehicles</li>
+              <li class="nav-main__item">Nearly New/Used Vehicles</li>
+              <li class="nav-main__item">Motability</li>
+              <li class="nav-main__item">Aftercare</li>
+              <li class="nav-main__item">Contact Us</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="navbar-secondary">
+        <ul class="nav-secondary__list">
+          <li class="nav-secondary__item">
+            Versa Connect <i class="fas fa-sort-down"></i>
+          </li>
+        </ul>
+        <ul class="nav-secondary__list">
+          <li class="nav-secondary__item nav-secondary__item--active">
+            Overview
+          </li>
+          <li class="nav-secondary__item">Offers</li>
+          <li class="nav-secondary__item">Models</li>
+          <li class="nav-secondary__item">Factory Fit Options</li>
+        </ul>
+      </div>
+      <main>
+        <section>
+          <div class="hero hero-top">
+            <div class="hero__info">
+              <h1 class="hero__heading">Versa Connect</h1>
+              <p class="hero__text">
+                "The Ford Tourneo Connect is a relaxing and comfortable place to
+                be. Great to drive, great to sit in, it boasts premium finishes,
+                high quality materials and fuel efficiency without compromising
+                everyday practicality."
+              </p>
+              <button class="hero__btn btn-primary">Make an Enquiry</button>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="car-info">
+            <div class="car-info__tabs">
+              <ul class="car-info__list">
+                <a
+                  class="car-info__item car-info__item--active"
+                  onclick="navTab(event, 'car-info__section-1')"
+                >
+                  <li>
+                    Dimensions
+                  </li>
+                </a>
+                <a
+                  class="car-info__item"
+                  onclick="navTab(event, 'car-info__section-2')"
+                >
+                  <li>
+                    Vehicle Layouts
+                  </li>
+                </a>
+                <a
+                  class="car-info__item"
+                  onclick="navTab(event, 'car-info__section-3')"
+                >
+                  <li>
+                    Colour
+                  </li>
+                </a>
+                <a
+                  class="car-info__item"
+                  onclick="navTab(event, 'car-info__section-4')"
+                >
+                  <li>
+                    Interior Trim
+                  </li>
+                </a>
+              </ul>
+            </div>
+            <div id="car-info__section-1" class="car-info__section">
+              <table class="car-info__table">
+                <tr>
+                  <th></th>
+                  <th>Short</th>
+                  <th>Long</th>
+                </tr>
+                <tr>
+                  <th>Entry height</th>
+                  <td>1,373mm</td>
+                  <td>1,373mm</td>
+                </tr>
+                <tr>
+                  <th>Ramp length</th>
+                  <td>1,010mm</td>
+                  <td>1,010mm</td>
+                </tr>
+                <tr>
+                  <th>Ramp width</th>
+                  <td>755mm</td>
+                  <td>755mm</td>
+                </tr>
+                <tr>
+                  <th>Channel length</th>
+                  <td>1,580mm</td>
+                  <td>1,580mm</td>
+                </tr>
+                <tr>
+                  <th>External height</th>
+                  <td>1,582mm</td>
+                  <td>1,585mm</td>
+                </tr>
+                <tr>
+                  <th>External length</th>
+                  <td>4,418mm</td>
+                  <td>4,818mm</td>
+                </tr>
+              </table>
+
+              <div class="car-info__graphic">
+                <img src="./images/dimentions.jpg" alt="" />
+              </div>
+            </div>
+            <div id="car-info__section-2" class="car-info__section hidden">
+              <p>Short (based on Ford Tourneo Connect)</p>
+              <div class="car-info__car-layouts">
+                <img src="./images/vehicle-layouts_2.jpg" alt="" />
+              </div>
+              <p>Long (based on Ford Tourneo Grand Connect)</p>
+              <div class="car-info__car-layouts">
+                <img src="./images/vehicle-layouts_1.jpg" alt="" />
+              </div>
+              <p>
+                *Wheelchair user can sit a little further forward (not as
+                forward as Row 2 seats)
+              </p>
+            </div>
+            <div id="car-info__section-3" class="car-info__section hidden">
+              <div class="car-info__vehicle">
+                <img id="vehicle-silver" src="./images/Silver.png" alt="" />
+                <img
+                  id="vehicle-magnetic"
+                  class="hidden"
+                  src="./images/Magnetic.png"
+                  alt=""
+                />
+                <img
+                  id="vehicle-red"
+                  class="hidden"
+                  src="./images/Red.png"
+                  alt=""
+                />
+                <img
+                  id="vehicle-guard"
+                  class="hidden"
+                  src="./images/Guard.png"
+                  alt=""
+                />
+                <img
+                  id="vehicle-solar"
+                  class="hidden"
+                  src="./images/Solar.png"
+                  alt=""
+                />
+                <img
+                  id="vehicle-black"
+                  class="hidden"
+                  src="./images/Black.png"
+                  alt=""
+                />
+                <img
+                  id="vehicle-metalicious"
+                  class="hidden"
+                  src="./images/Metalicious.png"
+                  alt=""
+                />
+                <img
+                  id="vehicle-deep-impact-blue"
+                  class="hidden"
+                  src="./images/DeepImpactBlue.png"
+                  alt=""
+                />
+                <img
+                  id="vehicle-blazer-blue"
+                  class="hidden"
+                  src="./images/BlazerBlue.png"
+                  alt=""
+                />
+              </div>
+
+              <form class="color-picker" action="">
+                <input
+                  type="radio"
+                  name="color"
+                  id="silver"
+                  value="silver"
+                  checked
+                  onclick="updateCarColor('vehicle-silver')"
+                />
+                <label for="silver"><span class="silver"></span></label>
+
+                <input
+                  type="radio"
+                  name="color"
+                  id="magnetic"
+                  onclick="updateCarColor('vehicle-magnetic')"
+                />
+                <label for="magnetic"><span class="magnetic"></span></label>
+
+                <input
+                  type="radio"
+                  name="color"
+                  id="red"
+                  onclick="updateCarColor('vehicle-red')"
+                />
+                <label for="red"><span class="red"></span></label>
+
+                <input
+                  type="radio"
+                  name="color"
+                  id="guard"
+                  onclick="updateCarColor('vehicle-guard')"
+                />
+                <label for="guard"><span class="guard"></span></label>
+
+                <input
+                  type="radio"
+                  name="color"
+                  id="solar"
+                  onclick="updateCarColor('vehicle-solar')"
+                />
+                <label for="solar"><span class="solar"></span></label>
+
+                <input
+                  type="radio"
+                  name="color"
+                  id="black"
+                  onclick="updateCarColor('vehicle-black')"
+                />
+                <label for="black"><span class="black"></span></label>
+
+                <input
+                  type="radio"
+                  name="color"
+                  id="metalicious"
+                  onclick="updateCarColor('vehicle-metalicious')"
+                />
+                <label for="metalicious"
+                  ><span class="metalicious"></span
+                ></label>
+
+                <input
+                  type="radio"
+                  name="color"
+                  id="deep-impact-blue"
+                  onclick="updateCarColor('vehicle-deep-impact-blue')"
+                />
+                <label for="deep-impact-blue"
+                  ><span class="deep-impact-blue"></span
+                ></label>
+
+                <input
+                  type="radio"
+                  name="color"
+                  id="blazer-blue"
+                  onclick="updateCarColor('vehicle-blazer-blue')"
+                />
+                <label for="blazer-blue"
+                  ><span class="blazer-blue"></span
+                ></label>
+              </form>
+
+              <div class="car-info__style-select">
+                <ul class="car-info__style-select-list">
+                  <li
+                    class="car-info__style-select-item car-info__style-select-item--active"
+                  >
+                    Non metallic
+                  </li>
+                  <li class="car-info__style-select-item">Metallic</li>
+                </ul>
+              </div>
+            </div>
+            <div id="car-info__section-4" class="car-info__section hidden">
+              <img src="./images/interior.jpg" alt="" />
+              <div class="interiors">
+                <div class="interiors__trim">
+                  <img src="./images/trim-titanium.jpg" alt="" />
+                  <h3 class="interiors__name">Titanium</h3>
+                  <div class="interiors__info">
+                    <ul class="interiors__list">
+                      <li class="interior__item">
+                        Insert: Chicane in Medium stone
+                      </li>
+                      <li class="interior__item">
+                        Bolster: Malt in Medium Stone
+                      </li>
+                    </ul>
+                    <input
+                      class="interiors__checkbox"
+                      type="checkbox"
+                      name="trim-style"
+                      id=""
+                    />
+                  </div>
+                </div>
+                <div class="interiors__trim">
+                  <img src="./images/trim-zetec.jpg" alt="" />
+                  <h3 class="interiors__name">Zetec</h3>
+                  <div class="interiors__info">
+                    <ul class="interiors__list">
+                      <li class="interior__item">
+                        Insert: Route in Charcoal Black
+                      </li>
+                      <li class="interior__item">
+                        Bolster: Max in Charcoal Black
+                      </li>
+                    </ul>
+                    <input
+                      class="interiors__checkbox"
+                      type="checkbox"
+                      name="trim-style"
+                      id=""
+                    />
+                  </div>
+                </div>
+                <div class="interiors__trim">
+                  <img src="./images/trim-titanium-black.jpg" alt="" />
+                  <h3 class="interiors__name">Titanium</h3>
+                  <div class="interiors__info">
+                    <ul class="interiors__list">
+                      <li class="interior__item">
+                        Insert: Chicane in Charcoal Black
+                      </li>
+                      <li class="interior__item">
+                        Bolster: Malt in Charcoal Black
+                      </li>
+                    </ul>
+                    <input
+                      class="interiors__checkbox"
+                      type="checkbox"
+                      name="trim-style"
+                      id=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="car-info__btn">View our Connect offers</button>
+          </div>
+        </section>
+        <section>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img src="./images/interior.jpg" alt="" />
+                </li>
+                <li class="glide__slide">
+                  <img src="./images/interior-2.jpg" alt="" />
+                </li>
+                <li class="glide__slide">
+                  <img src="./images/interior-3.jpg" alt="" />
+                </li>
+              </ul>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button
+                  class="glide__arrow glide__arrow--left"
+                  data-glide-dir="<"
+                >
+                  <
+                </button>
+                <button
+                  class="glide__arrow glide__arrow--right"
+                  data-glide-dir=">"
+                >
+                  >
+                </button>
+              </div>
+              <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <section>
+          <div class="info">
+            <p class="info__text">
+              The Versa Connect takes these attributes and focuses on extending
+              them seamlessly into the wheelchair accessible aspects of our
+              vehicle. It is our aim to produce a conversion that is both
+              practical and stylish, with an attention to detail that provides
+              the same high quality look and feel throughout the vehicle.
+            </p>
+            <p class="info__text">
+              The Versa Connect is available in two wheelbases. The short Versa
+              Connect can accommodate the wheelchair user and up to 3 seated
+              passengers (including the driver) or up to 5 seated passengers
+              without the wheelchair. The Long Versa Connect can accommodate the
+              wheelchair user and up to 5 seated passengers (including the
+              driver) or up to 7 seated passengers without the wheelchair.
+            </p>
+            <p class="info__text">
+              Twin sliding doors allow for ease of passenger access with a
+              lightweight manual ramp to face the rear for wheelchair access. As
+              an optional extra, the ramp can have the added ability, using the
+              simple lever, to fold- at into the vehicle so that when the
+              wheelchair user is not travelling, a huge and easily accessible
+              boot space is created making the Versa Connect even more
+              practical.
+            </p>
+            <button class="info__btn">View our Versa Connect offers</button>
+          </div>
+        </section>
+        <section>
+        <div class="hero hero-btm">
+          <div class="hero__info">
+            <div class="hero__heading">
+              <h2>Keeping you going</h2>
+            </div>
+            <p class="hero__text">
+              At Bristol Street Versa our priority is to offer so much more than
+              the sale of a Wheelchair Accessible Vehicle (WAV). We recognise
+              that the lives of the majority of our customers aren't always
+              plain sailing - and that's why we are committed to step in to make
+              sure we are #KeepingYouGoing.
+            </p>
+            <button class="hero__btn">
+              More Information
+            </button>
+          </div>
+        </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__info">
+            <div class="footer__logo">
+              <img src="./images/logo-light.png" alt="Logo" />
+            </div>
+            <p class="footer__text">
+              If you're looking for a new or used Wheelchair Accessible Vehicles
+              (WAV), then Bristol Street Versa is the best place to start.
+            </p>
+          </div>
+
+          <div class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">Home</li>
+              <li class="footer__nav-item">New Vehicle</li>
+              <li class="footer__nav-item">Motability</li>
+            </ul>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">Nearly New & Used</li>
+              <li class="footer__nav-item">Aftercare</li>
+              <li class="footer__nav-item">Contact Us</li>
+            </ul>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">Terms</li>
+              <li class="footer__nav-item">Blog</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__company-info">
+          Registered office for all group companies: Ventu Motors plc | Veru
+          House, Fifth Avenue Business Park, Team Valley | Tyne and wear | NE11
+          0XA
+        </p>
+      </footer>
+    </div>
+    <script src="/node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

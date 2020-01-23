@@ -1,0 +1,68 @@
+// @import "/node_modules/normalize.css/normalize.css";
+
+@import "/node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+@import "/node_modules/@glidejs/glide/dist/css/glide.theme.min.css";
+
+//colours
+$blue: #003e78;
+$blue-light: #017edb;
+$blue-saturated: #88a5c0;
+$green: #14a65b;
+$yellow: #ffff54;
+$white: #fff;
+$grey: #cbcbcb;
+$grey-light: #eeeff1;
+$grey-2: #70767d;
+$grey-dark: #43484d;
+
+$primary: $blue;
+$secondary: $blue-light;
+$font: "Roboto", sans-serif;
+$border-thin: solid 1px;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: $font;
+}
+
+p {
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-size: 1em;
+}
+
+ul li {
+  list-style: none;
+}
+
+@mixin btn-primary {
+  background-color: $secondary;
+  color: $white;
+  border: 0;
+  border-radius: 3px;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.invert {
+  filter: invert(100%) !important;
+}
+
+.hidden {
+  display: none !important;
+}
